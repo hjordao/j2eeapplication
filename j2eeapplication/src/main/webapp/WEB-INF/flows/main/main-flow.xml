@@ -10,7 +10,7 @@
 		<transition on="newUser" to="signUp" />
 	</view-state>
 	
-	<view-state id="signUp" view="signUp.xhtml">
+	<view-state id="signUp" view="signUp.xhtml" model="user">
 		<transition on="backToSignIn" to="welcome"/>
 	</view-state>
 	

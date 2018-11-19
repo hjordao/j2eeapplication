@@ -1,7 +1,11 @@
 package com.example.j2eeapp.domain;
 
-public class UserEntity {
+import java.io.Serializable;
 
+public class UserEntity implements Serializable {
+
+	private static final long serialVersionUID = 9014169812363387062L;
+	
 	private String firstName;
 	private String lastName;
 	private String userName;
