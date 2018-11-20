@@ -22,6 +22,7 @@
 		<webflow:flow-execution-listeners>
 			<webflow:listener ref="jpaFlowExecutionListener" />
 			<webflow:listener ref="facesContextListener"/>
+			<webflow:listener ref="securityFlowExecutionListener"/>
 		</webflow:flow-execution-listeners>
 	</webflow:flow-executor>	   		
  	<webflow:flow-registry id="flowRegistry" flow-builder-services="facesFlowBuilderServices" base-path="/WEB-INF/flows">
@@ -52,4 +53,6 @@
 	
 	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
 	
+	<bean id="securityFlowExecutionListener" class="org.springframework.webflow.security.SecurityFlowExecutionListener" />	
+
 </beans> 
