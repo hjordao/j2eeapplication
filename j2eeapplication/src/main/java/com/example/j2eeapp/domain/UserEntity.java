@@ -1,6 +1,5 @@
 package com.example.j2eeapp.domain;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -9,6 +8,10 @@ import org.springframework.security.authentication.encoding.PasswordEncoder;
 
 import com.example.j2eeapp.commons.domain.BaseEntity;
 
+/**
+ * @author hjordao
+ * Entity to hold application user data - first name, last name, etc.
+ */
 @Entity
 @Table(name="appuser")
 public class UserEntity extends BaseEntity {

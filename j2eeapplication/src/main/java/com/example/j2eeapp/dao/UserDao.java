@@ -3,10 +3,15 @@ package com.example.j2eeapp.dao;
 import com.example.j2eeapp.commons.dao.GenericDao;
 import com.example.j2eeapp.domain.UserEntity;
 
-public interface UserDao extends GenericDao<UserEntity, Long>{
+/**
+ * Data access object interface to work with User entity database operations.
+ * 
+ * @author hjordao
+ */
+public interface UserDao extends GenericDao<UserEntity, Long> {
 
 	/*
-	 * queries database for userName availability
+	 * Queries database for username availability
 	 *
 	 * @param userName
 	 * @return true if available
@@ -18,7 +23,7 @@ public interface UserDao extends GenericDao<UserEntity, Long>{
 	 * queries user by username
 	 *
 	 * @param userName
-	 * @return user
+	 * @return User Entity
 	 * 
 	 */
 	UserEntity loadUserByUserName(String userName);

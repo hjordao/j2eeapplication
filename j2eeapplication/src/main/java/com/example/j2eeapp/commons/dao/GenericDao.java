@@ -3,7 +3,6 @@ package com.example.j2eeapp.commons.dao;
 import java.io.Serializable;
 import java.util.List;
 
-
 /**
  * @author hjordao
  *
